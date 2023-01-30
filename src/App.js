@@ -11,11 +11,10 @@ function App() {
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
-          <Route path='/' element={<EmployeeList />}></Route>
+          <Route path="/" element={<EmployeeList />}></Route>
           <Route path='/EmployeeList' element={<EmployeeList />}></Route>
-          <Route index element={<EmployeeList />}>
-            <Route path='/add' element={<AddEmployee />}></Route>
-          </Route>
+          <Route index element={<EmployeeList />}></Route>
+          <Route path='/AddEmployee' element={<AddEmployee />}></Route>
         </Routes>
       </BrowserRouter>
     </>
